@@ -1,0 +1,81 @@
+h2 {
+  font-size: 2em;
+  text-align: center;
+  margin-top: 0;
+  padding-top: 0;
+  color: #373D36;
+}
+.abc{
+  float: left;
+  margin-left: 2em;
+}
+.selected {
+  background-color: #CFD8DC !important;
+  color: black;
+}
+.clientes {
+  margin: 0 0 2em 0;
+  list-style-type: none;
+  padding: 0;
+}
+.table {
+  width: 70em;
+  margin-left: auto;
+  margin-right: auto;
+}
+.table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.table tr {
+  border: white 5px solid;
+}
+.clientes tr {
+  cursor: pointer;
+  position: relative;
+  left: 0;
+  background-color: #EEE;
+  margin: .5em;
+  padding: .3em 0;
+  height: 1.6em;
+  border-radius: 4px;
+}
+.clientes tr.selected:hover {
+  background-color: #BBD8DC !important;
+  color: black;
+}
+.clientes tr:hover {
+  color: #607D8B;
+  background-color: #DDD;
+  left: .1em;
+}
+.clientes .text {
+  position: relative;
+  top: -3px;
+}
+.clientes .badge {
+  display: inline-block;
+  font-size: small;
+  color: white;
+  padding: 0.5em 0.7em;
+  background-color: #607D8B;
+  line-height: 1em;
+  position: relative;
+  height: 1.8em;
+  border-radius: 4px 0 0 4px;
+  width: 6.5em;
+}
+  button .crud {
+  float:right;
+  margin-top: 2px;
+  margin-right: .8em;
+  background-color: gray !important;
+  color:white;
+}
+span{
+    width: 10em;
+}
+p{
+    width: 10em;
+    
+}

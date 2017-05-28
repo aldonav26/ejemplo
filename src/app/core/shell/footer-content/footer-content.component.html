@@ -1,0 +1,36 @@
+<footer class="page-footer grey darken-1">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <h5 class="white-text">MegaFiestas Infantiles</h5>
+        <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+      </div>
+      <div class="col l4 offset-l2 s12">
+        <h5 class="white-text">Links</h5>
+        <div *ngIf="isLoggedIn; then thenTemplate; else elseTemplate"></div>
+        <ng-template #thenTemplate>
+          <ul>
+            <li><a class="grey-text text-lighten-4" [routerLink] = "[ '' ]">Inicio</a></li>
+            <li><a class="grey-text text-lighten-4" [routerLink] = "[ 'cliente' ]">Clientes</a></li>
+            <li><a class="grey-text text-lighten-4" [routerLink] = "[ 'about' ]">Acerca de</a></li>
+            <li><a class="grey-text text-lighten-4" [routerLink] = "[ '' ]">{{afService.displayName }}</a></li>
+            <li><a href="" class="grey-text text-lighten-4" (click)="logout()">Logout</a></li>
+          </ul>
+        </ng-template>
+        <ng-template #elseTemplate>
+          <ul>
+            <li><a href="">Inicio</a></li>
+            <li><a href="">Clientes</a></li>
+            <li><a href="">Acerca de</a></li>
+          </ul>
+        </ng-template>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+    © 2014 Copyright Text
+    <a class="grey-text text-lighten-4 right" href="">More Links</a>
+    </div>
+  </div>
+</footer>

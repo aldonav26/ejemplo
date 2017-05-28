@@ -1,0 +1,11 @@
+<button (click)="btn=true">Email</button>
+<button (click)="btn=false">Redes Sociales</button>
+<div *ngIf="btn; then mail; else social"></div>
+<ng-template #mail>
+  <br><br>Contactenos por Email
+</ng-template>
+<ng-template #social>
+  <br><br>
+    <a href="https://www.youtube.com/watch?v=teMC-JjA9E4#t=2063.190333">Video de Youtube</a>
+</ng-template>
+

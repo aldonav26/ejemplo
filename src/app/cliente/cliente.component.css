@@ -1,0 +1,87 @@
+.selected {
+  background-color: #CFD8DC !important;
+  color: black;
+}
+.clientes {
+  margin: 0 0 2em 0;
+  list-style-type: none;
+  padding: 0;
+}
+.table {
+  width: 70em;
+  margin-left: auto;
+  margin-right: auto;
+}
+.table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.table tr {
+  border: white 5px solid;
+}
+.clientes tr {
+  cursor: pointer;
+  position: relative;
+  left: 0;
+  background-color: #EEE;
+  margin: .5em;
+  padding: .3em 0;
+  height: 1.6em;
+  border-radius: 4px;
+}
+.clientes tr.selected:hover {
+  background-color: #BBD8DC !important;
+  color: black;
+}
+.clientes tr:hover {
+  color: #607D8B;
+  background-color: #DDD;
+  left: .1em;
+}
+.clientes .text {
+  position: relative;
+  top: -3px;
+}
+a{
+ text-decoration:none;   
+}
+/* label color */
+.input-field label {
+    color: #000;
+}
+/* label focus color */
+.input-field input[type=text]:focus + label {
+    color: #000;
+}
+/* label underline focus color */
+.input-field input[type=text]:focus {
+    border-bottom: 1px solid white;
+    box-shadow: 1px 1px 0 0 grey;
+}
+/* valid color */
+.input-field input[type=text].valid {
+    border-bottom: 1px solid #000;
+    box-shadow: 0 1px 0 0 #000;
+}
+/* invalid color */
+.input-field input[type=text].invalid {
+    border-bottom: 1px solid #000;
+    box-shadow: 0 1px 0 0 #000;
+}
+/* icon prefix focus color */
+.input-field .prefix.active {
+    color: #000;
+}
+
+.input-field input[type=text]{
+    height: 2em;
+}
+.collection{
+  height: 65px;
+  cursor: pointer;
+  position: relative;
+  left: 0;
+  margin: .5em;
+  padding: .3em 0;
+  border-radius: 8px;
+}

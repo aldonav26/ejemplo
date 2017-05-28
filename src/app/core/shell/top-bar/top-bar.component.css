@@ -1,0 +1,13 @@
+.brand-logo{
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  color: white;
+}
+
+a:link,  a:hover 
+{   
+ text-decoration:none;
+ color: greenyellow; 
+}
+h4, h1{
+  display: inline;
+}
